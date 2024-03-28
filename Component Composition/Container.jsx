@@ -7,9 +7,14 @@ export const Container = ({ title, children }) => {
         setCollapsed((t) => !t)
     }
 
+    const styleContainer = {
+        border: '20px solid red',
+        backgroundColor: 'white'
+    }
+
     return (
-        <div className="app">
-            <div className="app-title">
+        <div style={styleContainer}>
+            <div>
                 {title} 
                 <button onClick={handleToggleCollapse}>Toggle</button>
             </div>
